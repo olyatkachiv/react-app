@@ -27,9 +27,6 @@ export default class Ccomponent extends Component {
                                 <Link to="/about">About</Link>
                             </li>
                             <li>
-                                <Link to="/users">Users</Link>
-                            </li>
-                            <li>
                                 <Link to="/todo">Todo list</Link>
                             </li>
                         </ul>
