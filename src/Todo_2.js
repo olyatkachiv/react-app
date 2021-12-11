@@ -35,25 +35,19 @@ export default class Ccomponent extends Component {
         }
         return(
             <div>
-                <h1 style={{color: "yellow", backgroundColor: "darkblue", borderRadius: 50}} >Form</h1>
+                <h1 style={{color: "yellow", backgroundColor: "darkblue", borderRadius: 50, marginTop: 130}} >Form №2</h1>
                 <form style={styles} onSubmit={this.handleSubmit}>
                     <input value={this.state.input} onChange={this.handleChange} />
-                    <button type="submit">Submit!</button>
+                    <Button type="submit" variant="contained" color="primary">
+                        Submit!
+                    </Button>
                 </form>
                 <ul className="list">
                     {this.state.items.map((item, index) => (
                         <li key={index}>{item}</li>
                     ))}
                 </ul>
-                <Button variant="contained" color="primary">
-                    Primary
-                </Button>
-                <Button variant="contained" color="secondary">
-                    Secondary
-                </Button>
             </div>
         )
     }
 }
-
-Ccomponent.defaultProps= {name: "Alexey"}

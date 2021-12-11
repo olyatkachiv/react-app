@@ -34,13 +34,13 @@ export default class Fetch_img extends Component {
     render() {
         const {error, isLoaded, items} = this.state;
         if (error) {
-            return <p>Error {error.message} </p>
+            return <p style={{marginTop: 130}}>Error {error.message} </p>
         } else if (!isLoaded) {
-            return <p>Loading... </p>
+            return <p style={{marginTop: 130}}>Loading... </p>
         } else{
             return(
                 <div>
-                    <h1>Cocktail card</h1>
+                    <h1 style={{marginTop: 130}}>Cocktail card</h1>
                     <ul className="fetch_list">
                         {items.map(item =>(
                             <li key={item.name}>
